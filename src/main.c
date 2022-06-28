@@ -7,10 +7,10 @@ char	*ft_readline(void)
 {
 	char	*line_read;
 
-	line_read = readline("i'm dead bro > ");
+	line_read = readline("minishell > ");
 	if (!line_read)
 	{
-		printf("\033[A\ni'm dead bro > exit\n");
+		printf("\033[A\nminishell > exit\n");
 		exit(0);
 		signal(SIGINT, handler);
 	}
